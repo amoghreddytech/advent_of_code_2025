@@ -1,0 +1,8 @@
+[workspace]
+name= "aoc-2025"
+version = "1.0.0"
+resolver="3"
+
+members = [ "aoc_2025",
+  "day-01",
+]
