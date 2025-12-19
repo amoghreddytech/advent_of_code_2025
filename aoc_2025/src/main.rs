@@ -14,4 +14,9 @@ fn main() {
     println!("The sum of max voltages = {sum_volatage}");
     let sum_volatage = day_03::get_part_two("puzzle_inputs/day-03.txt".to_string());
     println!("The sum of max voltages = {sum_volatage}");
+    println!("------------- day 04 -------------------");
+    let rolls = day_04::get_part_one("puzzle_inputs/day-04.txt".to_string());
+    println!("the number of accessable rools = {rolls}");
+    let rolls = day_04::get_part_two("puzzle_inputs/day-04.txt".to_string());
+    println!("the number of accessable rools = {rolls}");
 }
