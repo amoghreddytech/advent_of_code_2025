@@ -19,4 +19,9 @@ fn main() {
     println!("the number of accessable rools = {rolls}");
     let rolls = day_04::get_part_two("puzzle_inputs/day-04.txt".to_string());
     println!("the number of accessable rools = {rolls}");
+    println!("------------- day 05 -------------------");
+    let fresh = day_05::get_part_one("puzzle_inputs/day-05.txt".to_string());
+    println!("the number of fresh ingredients = {fresh}");
+    let range_ingredients = day_05::get_part_two("puzzle_inputs/day-05.txt".to_string());
+    println!("the number of of fresh ingredient ids = {range_ingredients}");
 }
