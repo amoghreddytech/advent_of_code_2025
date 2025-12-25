@@ -24,10 +24,14 @@ fn main() {
     println!("the number of fresh ingredients = {fresh}");
     let range_ingredients = day_05::get_part_two("puzzle_inputs/day-05.txt".to_string());
     println!("the number of of fresh ingredient ids = {range_ingredients}");
-
     println!("------------- day 06 -------------------");
     let total = day_06::get_part_one("puzzle_inputs/day-06.txt".to_string());
     println!("the grand total is = {total}");
     let total = day_06::get_part_two("puzzle_inputs/day-06.txt".to_string());
     println!("the new grand total is = {total}");
+    println!("------------- day 07 -------------------");
+    let splits = day_07::get_part_one("puzzle_inputs/day-07.txt".to_string());
+    println!("the number of splits is = {splits}");
+    let splits = day_07::get_part_two("puzzle_inputs/day-07.txt".to_string());
+    println!("the number of quantum splits is = {splits}");
 }
