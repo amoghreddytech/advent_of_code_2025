@@ -34,4 +34,14 @@ fn main() {
     println!("the number of splits is = {splits}");
     let splits = day_07::get_part_two("puzzle_inputs/day-07.txt".to_string());
     println!("the number of quantum splits is = {splits}");
+    println!("------------- day 08 -------------------");
+    let product = day_08::get_part_one("puzzle_inputs/day-08.txt".to_string(), 1000);
+    println!("the product of the three lagest circutes = {product}");
+    let length = day_08::get_part_two("puzzle_inputs/day-08.txt".to_string());
+    println!("the length of the extension cable needed = {length}");
+    println!("------------- day 09 -------------------");
+    let max_area = day_09::get_part_one("puzzle_inputs/day-09.txt".to_string());
+    println!("the max_area that can be formed is = {max_area}");
+    let max_area = day_09::get_part_two("puzzle_inputs/day-09.txt".to_string());
+    println!("the max_area that can be formed with constraints = {max_area}");
 }

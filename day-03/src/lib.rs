@@ -43,6 +43,7 @@ impl Battery {
         num
     }
 
+    #[allow(unused_assignments)]
     fn find_max_digits(&self) -> u32 {
         let mut first_digit: u32 = 0;
         let mut second_digit: u32 = 0;

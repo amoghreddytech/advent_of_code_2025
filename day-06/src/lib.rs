@@ -15,7 +15,7 @@ impl Cephalopod {
     }
 
     fn calculate(self) -> u64 {
-        let mut iter = zip(self.numbers, self.conditions);
+        let iter = zip(self.numbers, self.conditions);
         let ans: Vec<u64> = iter
             .map(|(nums, cond)| {
                 if cond == '+' {
@@ -33,8 +33,6 @@ impl Cephalopod {
 }
 
 fn parse_input_part_2(input: String) -> Cephalopod {
-    let mut numbers: Vec<Vec<u64>> = vec![];
-    let mut conditions: Vec<char> = vec![];
     let mut input: Vec<String> = input.lines().map(|x| String::from(x)).collect();
     let conditions = input.pop().unwrap().replace(" ", "").chars().collect();
     let parsed: Vec<Vec<char>> = input
@@ -70,7 +68,7 @@ fn parse_input_part_2(input: String) -> Cephalopod {
 fn parse_input(input: String) -> Cephalopod {
     let mut numbers: Vec<Vec<u64>> = vec![];
     let mut conditions: Vec<char> = vec![];
-    let parse_data = input.lines().enumerate().for_each(|(row_index, line)| {
+    let _ = input.lines().enumerate().for_each(|(row_index, line)| {
         line.trim()
             .split_whitespace()
             .enumerate()
